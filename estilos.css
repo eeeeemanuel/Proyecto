@@ -1,0 +1,42 @@
+/*Espeificadores para img*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+/*Estilizar elementos de tipoo lista*/
+.lista{
+    display: flex;
+    margin-left: 50px;
+}
+
+/*Estilizar fondo*/
+body{
+    background-color: lightyellow;
+}
+
+/*Aliniar titulo*/
+h1{
+    text-align: center;
+}
+
+/*Estilizar botono de manego de links*/
+.btn{
+    background-color: rgb(196, 172, 128);
+    color: black;
+    padding: 25px;
+    font-size: larger;
+    font-palette: black;
+}
+
+/*Estilizar botones de agregado y editar*/
+input{
+    background-color: blue;
+    color: white;
+}
+
+/**/
+label{
+    margin-left: 50px;
+}
