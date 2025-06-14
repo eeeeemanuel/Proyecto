@@ -1,33 +1,43 @@
+/*Estilizar cuerpo*/
+body{
+    background-color: rgb(32, 86, 107);
+    display: flexbox;
+}
+
+table{
+    justify-content: center;
+    background-color: rgb(196, 172, 128);
+    color: black;
+    padding: 25px;
+    font-size: larger;
+    font-palette: black;
+}
+
+/*Barra de buqueda*/
+.navbar{
+    justify-content: center;
+}
 /*Espeificadores para img*/
-.contenedor{
-    display: flex;
+.conteneiner{
+    display: flexbox;
     justify-content: center;
     margin-left: 35px;
 }
 
+/*Estilizar imagenes*/
+img{
+    height: 100%;
+    width: 100%;
+}
 /*Estilizar elementos de tipoo lista*/
 .lista{
     display: flex;
     margin-left: 50px;
 }
 
-/*Estilizar fondo*/
-body{
-    background-color: lightyellow;
-}
-
 /*Aliniar titulo*/
 h1{
     text-align: center;
-}
-
-/*Estilizar botono de manego de links*/
-.btn{
-    background-color: rgb(196, 172, 128);
-    color: black;
-    padding: 25px;
-    font-size: larger;
-    font-palette: black;
 }
 
 /*Estilizar botones de agregado y editar*/
