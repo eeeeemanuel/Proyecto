@@ -18,169 +18,179 @@
   <body>
     <div class="container-grid">
       <!-- HEADER -->
-      <header
-        class="w-100 text-center py-3"
-      >
+      <header class="w-100 text-center py-3">
         <h1>Tienda</h1>
       </header>
-      
-      <main class="layout">
+
+      <main class="main-layout">
         <!--Colummna izquierda (para pantalla lg)-->
-        <div class="barra-latera">
-          <div class="d-flex justify-content-center gap-3 mb-3">
-            <a class="btn btn-primary" href="index.html">Home</a>
-            <a class="btn btn-primary" href="paginas/Carrito.html">Carrito</a>
-  
+        <div class="barra-lateral">
+          <div class="d-flex justify-content-center gap-3 mb-3  row">
+            <a class="btn btn-primary col-sm-3 col-lg-12" href="index.html">Home</a>
+            <a class="btn btn-primary col-sm-3 col-lg-12" href="paginas/Carrito.html">Carrito</a>
+
             <!-- Menú desplegable de categorías -->
             <div class="dropdown">
               <button
-                class="btn btn-primary dropdown-toggle"
+                class="btn btn-primary dropdown-toggle col-sm-3 col-lg-12"
                 type="button"
                 id="dropdownCategorias"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"        
-                >
+                aria-expanded="false"
+              >
                 Categorías
-                </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownCategorias">
-                    <li><a class="dropdown-item" href="#abrigos">Abrigos</a></li>
-                    <li><a class="dropdown-item" href="#pantalones">Pantalones</a></li>
-                    <li><a class="dropdown-item" href="#calzado">Calzado</a></li>
-            </ul>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                <li><a class="dropdown-item" href="#abrigos">Abrigos</a></li>
+                <li>
+                  <a class="dropdown-item" href="#pantalones">Pantalones</a>
+                </li>
+                <li><a class="dropdown-item" href="#calzado">Calzado</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!--Barra de navegación-->
-        <nav>
-            <div class="input-group w-75 mx-auto mb-3">
-                <span class="input-group-text"><img src="imgs/lupita-removebg-preview.png" style="width: 20px;" alt="lupa"></span>
-                <input type="text" class="form-control" placeholder="Buscar productos...">
-            </div>
-        </nav>
-        </div>
+        <!--cuerpo principal  derecho (para pantallas lg)-->
         <!--Cuerpo principal-->
+        <main class="container-grid contenido-principal">
+          <section class="row col-lg-12">
+            <!--Barra de navegación-->
+            <nav>
+              <div class="input-group w-75 mx-auto mb-3 barra-busqueda">
+                <span class="input-group-text"
+                  ><img
+                    src="imgs/lupita-removebg-preview.png"
+                    style="width: 20px"
+                    alt="lupa"
+                /></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar productos..."
+                />
+              </div>
+            </nav>
 
-        <main class="container-fluid mt-4">
-          <section class="row">
             <!--Lista de productos de la pagina-->
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/imgAbrigo1.jpg" alt="Producto 1" />
-              <p>Descripción: Producto 1<br />Precio: $$$</p>
-              <label for="cantidad1">Cantidad</label>
-              <select id="cantidad1" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/imgAbrigo1.jpg" alt="Producto 1" />
+                <p>Descripción: Producto 1<br />Precio: $$$</p>
+                <label for="cantidad1">Cantidad</label>
+                <select id="cantidad1" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/imgAbrigo2.jpg" alt="Producto 2" />
+                <p>Descripción: Producto 2<br />Precio: $$$</p>
+                <label for="cantidad2">Cantidad</label>
+                <select id="cantidad2" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/imgAbrigo3.jpg" alt="Producto 3" />
+                <p>Descripción: Producto 3<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/calzado1.jpeg" alt="Producto 4" />
+                <p>Descripción: Producto 4<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/calzado2.webp" alt="Producto 5" />
+                <p>Descripción: Producto 5<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/calzado3.avif" alt="Producto 6" />
+                <p>Descripción: Producto 6<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/pantalon.jpg" alt="Producto 7" />
+                <p>Descripción: Producto 7<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/pantalon2.jpeg" alt="Producto 8" />
+                <p>Descripción: Producto 8<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
+  
+              <div class="col-6 col-md-4 mb-4 producto">
+                <img src="imgs/pantalon3.jpg" alt="Producto 9" />
+                <p>Descripción: Producto 9<br />Precio: $$$</p>
+                <label for="cantidad3">Cantidad</label>
+                <select id="cantidad3" class="form-select w-50">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <button class="btn btn-success mt-2">Agregar</button>
+              </div>
             </div>
-
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/imgAbrigo2.jpg" alt="Producto 2" />
-              <p>Descripción: Producto 2<br />Precio: $$$</p>
-              <label for="cantidad2">Cantidad</label>
-              <select id="cantidad2" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/imgAbrigo3.jpg" alt="Producto 3" />
-              <p>Descripción: Producto 3<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-          
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/calzado1.jpeg" alt="Producto 4" />
-              <p>Descripción: Producto 4<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/calzado2.webp" alt="Producto 5" />
-              <p>Descripción: Producto 5<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/calzado3.avif" alt="Producto 6" />
-              <p>Descripción: Producto 6<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-          
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/pantalon.jpg" alt="Producto 7" />
-              <p>Descripción: Producto 7<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-          
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/pantalon2.jpeg" alt="Producto 8" />
-              <p>Descripción: Producto 8<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-
-            <div class="col-6 col-md-4 mb-4 producto">
-              <img src="imgs/pantalon3.jpg" alt="Producto 9" />
-              <p>Descripción: Producto 9<br />Precio: $$$</p>
-              <label for="cantidad3">Cantidad</label>
-              <select id="cantidad3" class="form-select w-50">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <button class="btn btn-success mt-2">Agregar</button>
-            </div>
-            
           </section>
         </main>
-        </main>
+      </main>
 
-        <!--Pie de pagina-->
-        <footer class="w-100 text-center py-3">
-          <p>Información de contacto: tienda@example.com</p>
-          <a href="paginas/locales.html">Ver Locales</a>
-        </footer>
-      </div>
+      <!--Pie de pagina-->
+      <footer class="w-100 text-center py-3">
+        <p>Información de contacto: tienda@example.com</p>
+        <a href="paginas/locales.html">Ver Locales</a>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

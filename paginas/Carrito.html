@@ -24,17 +24,17 @@
       </header>
 
       <!--Cuerpo-->
-      <main class="layout">
+      <main class="main-layout">
         <!--Colummna izquierda (para pantalla lg)-->
-        <div class="barra-latera">
-          <div class="d-flex justify-content-center gap-3 mb-3">
-            <a class="btn btn-primary" href="../index.html">Home</a>
-            <a class="btn btn-primary" href="paginas/Carrito.html">Carrito</a>
+        <div class="barra-lateral ">
+          <div class="d-flex justify-content-center gap-3 mb-3 row">
+            <a class="btn btn-primary col-lg-12" href="../index.html">Home</a>
+            <a class="btn btn-primary col-lg-12" href="../paginas/Carrito.html">Carrito</a>
 
             <!-- Menú desplegable de categorías -->
             <div class="dropdown">
               <button
-                class="btn btn-primary dropdown-toggle"
+                class="btn btn-primary dropdown-toggle col-lg-12"
                 type="button"
                 id="dropdownCategorias"
                 data-bs-toggle="dropdown"
@@ -51,28 +51,29 @@
               </ul>
             </div>
           </div>
-
-          <!--Barra de navegación-->
-          <nav>
-            <div class="input-group w-75 mx-auto mb-3">
-              <span class="input-group-text"
-                ><img
-                  src="../imgs/lupita-removebg-preview.png"
-                  style="width: 20px"
-                  alt="lupa"
-              /></span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Buscar productos..."
-              />
-            </div>
-          </nav>
         </div>
 
-       <main>
+      <!--Contenido principal derecho (para pantallas lg)-->
+      <main class="container-grid contenido-principal">
         <section class="row">
-          <div class="col-md-6 mb-4 px-4">
+        <!--Barra de navegación-->
+        <nav>
+          <div class="input-group w-75 mx-auto mb-3">
+            <span class="input-group-text"
+              ><img
+                src="../imgs/lupita-removebg-preview.png"
+                style="width: 20px"
+                alt="lupa"
+            /></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar productos..."
+            />
+          </div>
+        </nav>  
+        <!--lista de productos agregados al carrito-->        
+          <div class="row mb-4 px-4">
             <div class="p-3 rounded producto">
               <img
                 src="../imgs/calzado1.jpeg"
