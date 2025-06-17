@@ -1,0 +1,100 @@
+/*Diseño general del cuerpo*/
+body {
+  color: rgb(222, 232, 233);
+  background-color: rgb(207, 232, 243);
+  margin: 0;
+  padding: 0;
+}
+
+/*Diseño del header*/
+header {
+  width: 100vw;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #180d57;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.barra-lateral{
+  background-color: #1e135a;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/*Diseño del ppie de pagina*/
+footer {
+  width: 100vw;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #180d57;
+  color: white;
+  text-align: center;
+}
+
+/*tamaño de las imagenes en pantalla*/
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+/*Diseño de la lista de productos*/
+.lista-productos{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/*Diseño contenedor del producto*/
+.producto {
+  background-color: #a2d7e0;
+  border-radius: 10%;
+  padding: 1rem;
+  text-align: start;
+}
+
+/*Loales*/
+.local {
+  background-color: #9ddeee;
+  border-radius: 10%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+label {
+  margin-top: 0,5rem;
+}
+
+.barra-busqueda{
+  margin-bottom: 2rem;
+}
+
+/*Cuerpo principal (layout en pantalas grandes)*/
+.main-layout{
+  display: grid;
+}
+
+/*Layout general para pantallas grnades*/
+@media (min-width: 1204px){
+  .main-layout{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .barra-lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .lista-productos{
+    grid-template-columns: repeat(3, 40%);
+  }
+}
