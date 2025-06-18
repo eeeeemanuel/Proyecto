@@ -42,7 +42,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10%;
-  align-items: center;
+  justify-content: center;
 }
 
 /*Diseño de la lista de productos*/
@@ -57,7 +57,7 @@ footer {
   background-color: #a2d7e0;
   border-radius: 10%;
   padding: 1rem;
-  text-align: start;
+  text-align: end;
 }
 
 /*Loales*/
@@ -66,6 +66,14 @@ footer {
   border-radius: 10%;
   padding: 1rem;
   margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+}
+
+.local img{
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
   align-items: center;
 }
 
