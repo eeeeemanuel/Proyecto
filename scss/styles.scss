@@ -1,0 +1,150 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+@import 'base/reset';
+
+body{
+  display: flexbox;
+  background-color: $color-fondo-general;
+  color: $color-fondo-general;
+  margin: 0;
+  padding: 0;
+  //Tipo de letra de el header  
+  h1{
+    color: $color-texto-header;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+  }
+}
+
+.contenido-principal{
+  align-items: center;
+}
+
+//Diseño del header
+header{
+  width: 100vw;
+  background-color: $color-header-footer;
+}
+
+.barra-lateral{
+  display: flex;
+  flex-direction: column;
+  gap: $gap-default;
+  padding: $padding-default;
+  background-color: $color-header-footer;
+}
+
+//diseño  de pie de pagina
+footer{
+  width: $ancho-total;
+  margin: 0;
+  padding: $padding-default;
+  background-color: $color-header-footer; 
+  color: $color-texto-header;
+}
+
+//Lista Producto
+.lista-productos{
+  display: flex;
+  gap: $gap-default;
+
+  .producto{
+    background-color: $color-local;
+    border-radius: $border-radius;
+    padding: $padding-default;
+    text-align: start;
+    justify-content: end;
+
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      justify-content: center;
+    }
+  }
+}
+
+//Locales
+.local{
+  background-color: $color-local;
+  border-radius: $border-radius;
+  padding: $padding-default;
+  margin: auto;
+
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    align-items: center;
+  }
+}
+
+label{
+  margin-top: o,5rem;
+}
+
+.barra-busqueda{
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+//Lista de productos en carrito
+.lista-carrito{
+  display: grid;
+
+  .producto{
+    background-color: $color-local;
+    padding-left: $padding-default;
+
+    img{
+      border-radius: $border-radius;
+      justify-content: center;
+
+    }
+  }
+}
+//Cuerpo priincipal (layouot en panallas grnades)
+.main-layout{
+  display: grid;
+}
+
+//Layout general para panntallas grandes
+@media (min-width: 800px){
+  .main-layout{
+    display: grid;
+    grid-template-columns: 250px   1fr;
+    gap: $gap-large;
+    padding: $padding-large;
+  }
+
+  .barra-lateral{
+    border-radius: $padding-large;
+    background-color: $color-barra-lateral;
+    align-items: flex-start;
+    padding: $padding-large;
+  }
+
+  .contenido-principal{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .barra-busqueda{
+    width: 100%;
+    margin-bottom: $padding-large;
+  }
+
+  .lista-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap-large;
+  }
+
+  .producto{
+    background-color: $color-fondo-general;
+    padding: 1rem;
+    border-radius: 10%;
+    text-align: start; 
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda</title>
+    <title>Home</title>
     <!--Link a estilos personalizados-->
     <link rel="stylesheet" href="style/style.css" />
     <!--link a bootstrap-->
@@ -19,15 +19,15 @@
     <div class="container-grid">
       <!-- HEADER -->
       <header class="w-100 text-center py-3">
-        <h1>Tienda</h1>
+        <h1>Urban Shop</h1>
       </header>
 
       <main class="main-layout">
         <!--Colummna izquierda (para pantalla lg)-->
         <div class="barra-lateral">
-          <div class="d-flex justify-content-center gap-3 mb-3  row">
-            <a class="btn btn-primary col-sm-3 col-lg-12" href="index.html">Home</a>
-            <a class="btn btn-primary col-sm-3 col-lg-12" href="paginas/Carrito.html">Carrito</a>
+          <div class="d-flex justify-content-center gap-3 mb-3 row">
+            <a class="btn btn-primary col-5 col-md-12" href="index.html">Home</a>
+            <a class="btn btn-primary col-5 col-md-12" href="paginas/Carrito.html">Carrito</a>
 
             <!-- Menú desplegable de categorías -->
             <div class="dropdown">
@@ -54,7 +54,7 @@
         <!--cuerpo principal  derecho (para pantallas lg)-->
         <!--Cuerpo principal-->
         <main class="container-grid contenido-principal">
-          <section class="row col-lg-12">
+          <section class="row">
             <!--Barra de navegación-->
             <nav>
               <div class="input-group w-75 mx-auto mb-3 barra-busqueda">
@@ -73,121 +73,87 @@
             </nav>
 
             <!--Lista de productos de la pagina-->
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/imgAbrigo1.jpg" alt="Producto 1" />
-                <p>Descripción: Producto 1<br />Precio: $$$</p>
-                <label for="cantidad1">Cantidad</label>
-                <select id="cantidad1" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
+              <main class="lista-productos row justify-content-center">
+
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/imgAbrigo1.jpg" alt="Producto 1" />
+                  <p>Descripción: Camperon marron de invierno<br />Precio: U$S100</p>
+                  <label for="cantidad1">Cantidad</label>
+                  <select id="cantidad1" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
+    
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/imgAbrigo2.jpg" alt="Producto 2" />
+                  <p>Descripción: Campera deportiva verde<br />Precio: U$S50</p>
+                  <label for="cantidad2">Cantidad</label>
+                  <select id="cantidad2" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
+    
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/calzado2.webp" alt="Producto 5" />
+                  <p>Descripción: Zapatos de vestir<br />Precio: U$S80</p>
+                  <label for="cantidad3">Cantidad</label>
+                  <select id="cantidad3" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
+    
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/calzado3.avif" alt="Producto 6" />
+                  <p>Descripción: Championes grises casuales<br />Precio: U$S70</p>
+                  <label for="cantidad3">Cantidad</label>
+                  <select id="cantidad3" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
+    
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/pantalon.jpg" alt="Producto 7" />
+                  <p>Descripción: Pantalon azul <br />Precio: U$S40</p>
+                  <label for="cantidad3">Cantidad</label>
+                  <select id="cantidad3" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
+    
+                <div class="col-lg-3 col-5 mb-4 producto">
+                  <img src="imgs/pantalon3.jpg" alt="Producto 9" />
+                  <p>Descripción: Pantalon gris<br />Precio: U$S35</p>
+                  <label for="cantidad3">Cantidad</label>
+                  <select id="cantidad3" class="form-select w-50">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <button class="btn btn-success mt-2">Agregar</button>
+                </div>
               </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/imgAbrigo2.jpg" alt="Producto 2" />
-                <p>Descripción: Producto 2<br />Precio: $$$</p>
-                <label for="cantidad2">Cantidad</label>
-                <select id="cantidad2" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/imgAbrigo3.jpg" alt="Producto 3" />
-                <p>Descripción: Producto 3<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/calzado1.jpeg" alt="Producto 4" />
-                <p>Descripción: Producto 4<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/calzado2.webp" alt="Producto 5" />
-                <p>Descripción: Producto 5<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/calzado3.avif" alt="Producto 6" />
-                <p>Descripción: Producto 6<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/pantalon.jpg" alt="Producto 7" />
-                <p>Descripción: Producto 7<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/pantalon2.jpeg" alt="Producto 8" />
-                <p>Descripción: Producto 8<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-  
-              <div class="col-6 col-md-4 mb-4 producto">
-                <img src="imgs/pantalon3.jpg" alt="Producto 9" />
-                <p>Descripción: Producto 9<br />Precio: $$$</p>
-                <label for="cantidad3">Cantidad</label>
-                <select id="cantidad3" class="form-select w-50">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-                <button class="btn btn-success mt-2">Agregar</button>
-              </div>
-            </div>
-          </section>
-        </main>
+            </section>
       </main>
+    </main>
 
       <!--Pie de pagina-->
       <footer class="w-100 text-center py-3">
-        <p>Información de contacto: tienda@example.com</p>
+        <p>Información de contacto: urbanShop@gmail.com</p>
         <a href="paginas/locales.html">Ver Locales</a>
       </footer>
     </div>

@@ -1,0 +1,40 @@
+// Centrado de texto o contenido con flex
+@mixin centrar-flex($direccion: row, $alinear: center, $justificar: center) {
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $alinear;
+    justify-content: $justificar;
+  }
+  
+  // Imagenes responsivas con borde redondeado
+  @mixin imagen-responsive($radius: $border-radius) {
+    width: 100%;
+    height: auto;
+    border-radius: $radius;
+  }
+  
+  // Tarjetas básicas (producto, local, etc.)
+  @mixin tarjeta($color-fondo, $alinear-texto: end) {
+    background-color: $color-fondo;
+    border-radius: $border-radius;
+    padding: $padding-default;
+    text-align: $alinear-texto;
+  }
+  
+  // Contenedor de grilla adaptable
+  @mixin grilla($columnas: 1fr, $gap: $gap-default) {
+    display: grid;
+    grid-template-columns: $columnas;
+    gap: $gap;
+  }
+  
+  // Header o footer base
+  @mixin encabezado($color-fondo: $color-header-footer, $color-texto: $color-texto-header) {
+    width: $ancho-total;
+    margin: 0;
+    padding: $padding-default 0;
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+  }
+  

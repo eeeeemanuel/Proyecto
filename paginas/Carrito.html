@@ -20,16 +20,16 @@
     <div class="container-grid">
       <!--Header-->
       <header class="w-100 text-center py-3">
-        <h1></h1>
+        <h1>Carrito de compras</h1>
       </header>
 
       <!--Cuerpo-->
       <main class="main-layout">
         <!--Colummna izquierda (para pantalla lg)-->
-        <div class="barra-lateral ">
+        <div class="barra-lateral">
           <div class="d-flex justify-content-center gap-3 mb-3 row">
-            <a class="btn btn-primary col-lg-12" href="../index.html">Home</a>
-            <a class="btn btn-primary col-lg-12" href="../paginas/Carrito.html">Carrito</a>
+            <a class="btn btn-primary col-5 col-md-12" href="../index.html">Home</a>
+            <a class="btn btn-primary  col-5 col-md-12" href="../paginas/Carrito.html">Carrito</a>
 
             <!-- Menú desplegable de categorías -->
             <div class="dropdown">
@@ -72,45 +72,47 @@
             />
           </div>
         </nav>  
-        <!--lista de productos agregados al carrito-->        
-          <div class="col-md-6 mb-4 px-4 producto">
-            <div class="p-3 rounded producto">
-              <img
-                src="../imgs/calzado1.jpeg"
-                class="img-fluid mb-3 rounded"
-                alt="Producto 4"
-              />
-              <ul class="list-unstyled">
-                <li><strong>Descripción:</strong> Producto 4</li>
-                <li><strong>Cantidad:</strong> 1</li>
-                <li><strong>Precio:</strong> $$$</li>
-              </ul>
-              <button class="btn btn-warning">Editar</button>
-            </div>
-          </div>
 
-          <div class="col-md-6 mb-4 px-4 producto">
-            <div class="p-3 rounded producto">
-              <img
-                src="../imgs/imgAbrigo2.jpg"
-                class="img-fluid mb-3 rounded "
-                alt="Producto 2"
-              />
-              <ul class="list-unstyled">
-                <li><strong>Descripción:</strong> Producto 2</li>
-                <li><strong>Cantidad:</strong> 1</li>
-                <li><strong>Precio:</strong> $$$</li>
-              </ul>
-              <button class="btn btn-warning">Editar</button>
+        <!--lista de productos agregados al carrito-->        
+          <main class="lista-carrito row justify-content-center">
+            <div class="mb-4 px-4 producto col-lg-4">
+              <div class="p-3 rounded producto">
+                <img
+                  src="../imgs/calzado1.jpeg"
+                  class="img-fluid mb-3 rounded"
+                  alt="Producto 4"
+                />
+                <ul class="list-unstyled">
+                  <li><strong>Descripción:</strong>Zapatillas blancas</li>
+                  <li><strong>Cantidad:</strong> 1</li>
+                  <li><strong>Precio:</strong> U$S45</li>
+                </ul>
+                <button class="btn btn-warning">Editar</button>
+              </div>
             </div>
-          </div>
-        </section>
+  
+            <div class="mb-4 px-4 producto col-lg-4">
+              <div class="p-3 rounded producto">
+                <img
+                  src="../imgs/imgAbrigo2.jpg"
+                  class="img-fluid mb-3 rounded "
+                  alt="Producto 2"
+                />
+                <ul class="list-unstyled">
+                  <li><strong>Descripción:</strong>Campera deportiva verde</li>
+                  <li><strong>Cantidad:</strong> 1</li>
+                  <li><strong>Precio:</strong> U$S50</li>
+                </ul>
+                <button class="btn btn-warning">Editar</button>
+              </div>
+            </div>
+          </section>
        </main>
       </main>
 
       <!--pie dde pagina-->
       <footer class="w-100 text-center py-3">
-        <p>Información de contacto: tienda@example.com</p>
+        <p>Información de contacto: urbanShop@gmail.com</p>
         <a href="../paginas/locales.html">Ver Locales</a>
       </footer>
     </div>
