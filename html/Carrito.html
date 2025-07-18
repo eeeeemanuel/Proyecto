@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de compras</title>
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Bootstrap -->
     <link
@@ -29,7 +29,7 @@
         <nav class="barra-lateral">
           <div class="d-flex justify-content-center gap-3 mb-3 row">
             <a class="btn btn-primary col-5 col-md-12" href="../index.html">Home</a>
-            <a class="btn btn-primary  col-5 col-md-12" href="../paginas/Carrito.html">Carrito</a>
+            <a class="btn btn-primary  col-5 col-md-12" href="../html/Carrito.html">Carrito</a>
 
             <!-- Menú desplegable de categorías -->
             <div class="dropdown">
@@ -57,12 +57,11 @@
       <main class="container-grid contenido-principal">
         <section class="row">
         <!--Barra de navegación-->
-        <nav>
+        <nav class="barra-nav">
           <div class="input-group w-75 mx-auto mb-3">
             <span class="input-group-text"
               ><img
                 src="../imgs/lupita-removebg-preview.png"
-                style="width: 20px"
                 alt="lupa"
             /></span>
             <input
@@ -74,11 +73,11 @@
         </nav>  
 
         <!--lista de productos agregados al carrito-->        
-        <main class="lista-carrito row justify-content-center">  
+        <main class="lista-carrito d-flex row justify-content-center">  
           <!--Producto 1-->
-          <div class="mb-4 px-8 producto row">
-            <div class="row p-3">
-              <div class="col-md-3">
+          <div class="mb-4 px-4 producto row">
+            <div class="p-3 row">
+              <div class="d-flex align-items-center col-12 col-md-6">
                 <img
                 src="../imgs/calzado1.jpeg"
                 class="img-fluid mb-3"
@@ -86,15 +85,15 @@
               />
               </div>
 
-              <div  class="col-md-8">
+              <div  class="col-10 col-md-6 col-lg-4">
                 <ul class="list-desc">
-                  <li><strong>Descripción:</strong>Zapatillas blancas</li>
-                  <li><strong>Cantidad:</strong> 1</li>
-                  <li><strong>Precio:</strong> U$S45</li>
+                  <li><strong>Descripción: </strong>Zapatillas blancas</li>
+                  <li><strong>Cantidad: </strong>1</li>
+                  <li><strong>Precio: </strong>U$S45</li>
                 </ul>
               </div>
 
-              <div class="col-md-1 d-flex justify-content-center align-items-center">
+              <div class="btn-editar col-2 col-md-12 col-lg-1">
                 <button class="btn btn-warning">Editar</button>
               </div>
             </div>
@@ -103,7 +102,7 @@
           <!--Producto 2-->
           <div class=" producto row">
             <div class="row">
-              <div class="col-md-3">
+              <div class="align-items-center col-12 col-md-6 mb-4">
                 <img
                 src="../imgs/imgAbrigo2.jpg"
                 class="img-fluid mb-3"
@@ -111,15 +110,15 @@
                 />
               </div>
 
-              <div class="col-md-8">
+              <div class="col-10 col-md-6 col-lg-4">
                 <ul class="list-desc">
-                  <li><strong>Descripción:</strong>Campera deportiva verde</li>
-                  <li><strong>Cantidad:</strong> 1</li>
-                  <li><strong>Precio:</strong> U$S50</li>
+                  <li><strong>Descripción: </strong>Campera deportiva verde</li>
+                  <li><strong>Cantidad: </strong>1</li>
+                  <li><strong>Precio: </strong>U$S50</li>
                 </ul>
               </div>
 
-                <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <div class="btn-editar col-2 col-md-12 col-lg-1">
                   <button class="btn btn-warning">Editar</button>
                 </div>
               </div>
@@ -128,16 +127,18 @@
           </div>
 
           <section class="container my-4">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 border rounded bg-light">
+            <div class="row p-3 border rounded bg-light">
               <!-- Total del envio -->
-              <div class="fs-5 fw-bold text-md-end">
-                Total: U$S95 +U$S10(Envio)
+              <div class="col-6 fs-5 fw-bold d-flex justify-content-start">
+                Total: U$S95
               </div>
       
-              <!-- Botón para envir u pedido-->
-              <button class="btn btn-success mb-3 mb-md-0">
-                Enviar
-              </button>
+              <!-- Botón para envir un pedido-->
+               <div class="col-6 d-flex justify-content-end align-items-end">
+                <button class="btn btn-success">
+                  Enviar
+                </button>
+               </div>
             </div>
           </section>
           
@@ -148,7 +149,7 @@
       <footer class="w-100 text-center py-3">
         <p>Información de contacto: urbanShop@gmail.com</p>
         <p>Contacto: +598 97 552 324</p>
-        <a href="../paginas/locales.html">Ver Locales</a>
+        <a href="../html/locales.html">Ver Locales</a>
       </footer>
     </div>
 
