@@ -26,7 +26,7 @@
       <!--Cuerpo-->
       <main class="main-layout">
         <!--Colummna izquierda (para pantalla lg)-->
-        <div class="barra-lateral">
+        <nav class="barra-lateral">
           <div class="d-flex justify-content-center gap-3 mb-3 row">
             <a class="btn btn-primary col-5 col-md-12" href="../index.html">Home</a>
             <a class="btn btn-primary  col-5 col-md-12" href="../paginas/Carrito.html">Carrito</a>
@@ -51,7 +51,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </nav>
 
       <!--Contenido principal derecho (para pantallas lg)-->
       <main class="container-grid contenido-principal">
@@ -74,45 +74,80 @@
         </nav>  
 
         <!--lista de productos agregados al carrito-->        
-          <main class="lista-carrito row justify-content-center">
-            <div class="mb-4 px-4 producto col-lg-4">
-              <div class="p-3 rounded producto">
+        <main class="lista-carrito row justify-content-center">  
+          <!--Producto 1-->
+          <div class="mb-4 px-8 producto row">
+            <div class="row p-3">
+              <div class="col-md-3">
                 <img
-                  src="../imgs/calzado1.jpeg"
-                  class="img-fluid mb-3 rounded"
-                  alt="Producto 4"
-                />
-                <ul class="list-unstyled">
+                src="../imgs/calzado1.jpeg"
+                class="img-fluid mb-3"
+                alt="Producto 4"
+              />
+              </div>
+
+              <div  class="col-md-8">
+                <ul class="list-desc">
                   <li><strong>Descripción:</strong>Zapatillas blancas</li>
                   <li><strong>Cantidad:</strong> 1</li>
                   <li><strong>Precio:</strong> U$S45</li>
                 </ul>
+              </div>
+
+              <div class="col-md-1 d-flex justify-content-center align-items-center">
                 <button class="btn btn-warning">Editar</button>
               </div>
             </div>
-  
-            <div class="mb-4 px-4 producto col-lg-4">
-              <div class="p-3 rounded producto">
+          </div>
+           
+          <!--Producto 2-->
+          <div class=" producto row">
+            <div class="row">
+              <div class="col-md-3">
                 <img
-                  src="../imgs/imgAbrigo2.jpg"
-                  class="img-fluid mb-3 rounded "
-                  alt="Producto 2"
+                src="../imgs/imgAbrigo2.jpg"
+                class="img-fluid mb-3"
+                alt="Producto 2"
                 />
-                <ul class="list-unstyled">
+              </div>
+
+              <div class="col-md-8">
+                <ul class="list-desc">
                   <li><strong>Descripción:</strong>Campera deportiva verde</li>
                   <li><strong>Cantidad:</strong> 1</li>
                   <li><strong>Precio:</strong> U$S50</li>
                 </ul>
-                <button class="btn btn-warning">Editar</button>
               </div>
+
+                <div class="col-md-1 d-flex justify-content-center align-items-center">
+                  <button class="btn btn-warning">Editar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <section class="container my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 border rounded bg-light">
+              <!-- Total del envio -->
+              <div class="fs-5 fw-bold text-md-end">
+                Total: U$S95 +U$S10(Envio)
+              </div>
+      
+              <!-- Botón para envir u pedido-->
+              <button class="btn btn-success mb-3 mb-md-0">
+                Enviar
+              </button>
             </div>
           </section>
+          
        </main>
       </main>
 
-      <!--pie dde pagina-->
+      <!--pie de pagina-->
       <footer class="w-100 text-center py-3">
         <p>Información de contacto: urbanShop@gmail.com</p>
+        <p>Contacto: +598 97 552 324</p>
         <a href="../paginas/locales.html">Ver Locales</a>
       </footer>
     </div>

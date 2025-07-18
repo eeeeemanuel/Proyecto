@@ -17,7 +17,7 @@
     </header>
 
     <main class="main-layout">
-      <div class="barra-lateral">
+      <nav class="barra-lateral">
         <div class="d-flex justify-content-center gap-3 mb-3 row">
           <a class="btn btn-primary col-5 col-md-12" href="../index.html">Home</a>
           <a class="btn btn-primary col-5 col-md-12" href="../paginas/Carrito.html">Carrito</a>
@@ -42,7 +42,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
       <main>
         <!--Cuerpo principal derecho-->
         <section class="row">
@@ -56,23 +56,41 @@
           </nav>
 
           <!--Lista de locales-->
-          <main class="row">
-            <div class="col-lg-6 local">
-              <img src="../imgs/imgLocal1.jpeg" alt="Local Montevideo">
-              <h3 class="mt-3 text-black">Local en Montevideo</h3>
-              <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+          <main class="row lista-locales justify-content-center">
+            <!--Local 1-->
+            <div class="local row">
+              <div class="col-md-4">
+                <img src="../imgs/imgLocal1.jpeg" alt="Local Maldonado">
+              </div>
+              
+              <div class="col-md-4">
+                <h3 class="mt-3 text-black">Local en Buenos Aires</h3>
+                <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+              </div>
             </div>
       
-            <div class="col-lg-6 local">
-              <img src="../imgs/imgLocal2.jpeg" alt="Local Buenos Aires">
-              <h3 class="mt-3 text-black">Local en Buenos Aires</h3>
-              <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+            <!--Local 2-->
+            <div class="local row">
+              <div class="col-md-4">
+                <img src="../imgs/imgLocal2.jpeg" alt="Local Maldonado">
+              </div>
+              
+              <div class="col-md-4">
+                <h3 class="mt-3 text-black">Local en Montevideo</h3>
+                <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+              </div>
             </div>
-      
-            <div class="col-lg-6 local">
-              <img src="../imgs/imgLocal3.jpeg" alt="Local Maldonado">
-              <h3 class="mt-3 text-black">Local en Maldonado</h3>
-              <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+
+            <!--Local 3-->
+            <div class="local row">
+              <div class="col-md-4">
+                <img src="../imgs/imgLocal3.jpeg" alt="Local Maldonado">
+              </div>
+              
+              <div class="col-md-4 ">
+                <h3 class="mt-3 text-black">Local en Cordoba</h3>
+                <a class="btn btn-outline-dark mt-2" href="#">Ver en Google Maps</a>
+              </div>
             </div>
           </main>
         </section>
@@ -81,6 +99,7 @@
 
     <footer class="w-100 text-center py-3">
       <p>Información de contacto: urbanShop@gmail.com</p>
+      <p>Contacto: +598 97 552 324</p>
       <a href="../paginas/locales.html">Ver Locales</a>
     </footer>
   </div>
