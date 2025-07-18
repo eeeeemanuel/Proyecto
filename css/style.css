@@ -100,7 +100,7 @@ label {
 .lista-carrito .producto {
   display: flex;
   border-radius: 1rem;
-  background-color: #88c9d4;
+  background-color: rgba(207, 230, 240, 0.897);
   padding: 1rem;
   align-items: center;
   margin: 1rem;
@@ -154,7 +154,6 @@ label {
     gap: 1.5rem;
   }
   .lista-productos .producto {
-    background-color: #88c9d4;
     padding: 1rem;
     border-radius: 10%;
     text-align: start;
@@ -164,9 +163,12 @@ label {
   }
   .lista-carrito .producto {
     border-radius: 1rem;
-    background-color: #88c9d4;
     padding: 1rem;
     text-align: start;
+  }
+  .lista-carrito .producto img {
+    height: 150px;
+    width: auto;
   }
 }
 
